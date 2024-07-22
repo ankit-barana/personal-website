@@ -23,7 +23,7 @@ const getProject = (slug: string, fields: string[]) => {
     return items
 }
 
-export const getProjectSlugs = () => {
+export const getProjectsSlugs = () => {
     return (
         fs.
             readdirSync(projectDirectory).
@@ -32,7 +32,7 @@ export const getProjectSlugs = () => {
 }
  
 export const getAllProjectsData = () => {
-    const slugs = getProjectSlugs()
+    const slugs = getProjectsSlugs()
     const projects = slugs.map((slug) =>
         getProject(slug, [
             'title',
@@ -42,7 +42,8 @@ export const getAllProjectsData = () => {
             'coverImage',
             'liveUrl',
             'repoUrl',
-            'priority'
+            'priority',
+            'content'
         ])
     )
     return projects
@@ -57,7 +58,8 @@ export const getProjectBySlug = (slug: string) => {
         'coverImage',
         'liveUrl',
         'repoUrl',
-        'priority'
+        'priority',
+        'content'
     ])
     return project
 }
