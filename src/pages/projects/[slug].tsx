@@ -21,7 +21,6 @@ const Project: NextPage<ProjectProps> = ({ project }) => {
 
 export default Project
 
-
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
         paths: getProjectsSlugs().map((slug) => ({ params: { slug } })),
