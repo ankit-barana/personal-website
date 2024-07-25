@@ -5,11 +5,12 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       mono: ['Source Code Pro', 'monospace'],
-      heading: ['Barlow', 'sans-serif']
+      heading: ['Barlow', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -22,10 +23,12 @@ const config: Config = {
           600: '#6EAD34',
           700: '#3C5E1C',
           800: '#283F13'
-        }
-      }
+        },
+      },
     },
   },
+
   plugins: [require('@tailwindcss/typography')],
 };
+
 export default config;

@@ -1,11 +1,27 @@
-import { Inter } from "next/font/google";
+import { NextPage } from "next";
+import { getAllProjectsData } from "@/services/projectService";
+import { Project } from "@/types/project";
 
-const inter = Inter({ subsets: ["latin"] });
+interface IndexProps {
+  projects: Project[]
+}
 
-export default function Home() {
+const Index: NextPage<IndexProps> = ({ projects }) => {
   return (
-    <div className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`} >
-        <h1>Hello, World!</h1>
+    <div>
+      {projects.map((project) => (
+        <h1 key={project.title}>{ project.title }</h1>
+      ))}
     </div>
-  );
+  )
+}
+
+export default Index
+
+export const getStaticProps = async () => {
+  return {
+    props: {
+      projects: getAllProjectsData()
+    }
+  }
 }
