@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import { getAllProjectsData } from '@/services/projectService';
 import { Project } from '@/types/project';
+import Intro from '@/components/Intro';
 
 interface IndexProps {
     projects: Project[];
@@ -8,10 +9,10 @@ interface IndexProps {
 
 const Index: NextPage<IndexProps> = ({ projects }) => {
     return (
-        <div>
-            {projects.map((project) => (
-                <h1 key={project.title}>{project.title}</h1>
-            ))}
+        <div className="mx-auto max-w-6xl">
+            <div className="w-full px-4 sm:px-8 lg:ml-20">
+                <Intro />
+            </div>
         </div>
     );
 };
