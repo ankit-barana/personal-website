@@ -42,8 +42,9 @@ const config: Config = {
           800: '#652624',
           900: '#4C1C1B',
         },
-        bg: {
-          light: 'F5F3EF',
+        preferred: {
+          white: '#F5F3EF',
+          gray: '#4B5563',
         },
       },
     },
