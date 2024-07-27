@@ -3,7 +3,10 @@ import Gradient from './Gradient';
 
 const Intro = () => {
     return (
-        <section className="flex flex-col justify-center min-h-[600px] md:min-h-[750px]">
+        <section
+            className="flex flex-col justify-center min-h-[600px] md:min-h-[750px]"
+            id="home"
+        >
             <p className="font-bold text-gray-600">Hi, I am</p>
             <div
                 className="mt-3 flex flex-col rounded max-w-fit font-semibold font-mono text-5xl tracking-tight text-preferred-white 

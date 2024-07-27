@@ -1,22 +1,35 @@
 import clsx from 'clsx';
 import Gradient from './Gradient';
-import Button from './Button';
 
 const Navbar = () => {
     return (
-        <ul className="z-10 p-1 fixed mx-auto flex w-fit rounded-full bg-preferred-glass opacity-100 backdrop-blur-[10.5px]">
-            <Tab>
-                <Gradient
-                    text="ab."
-                    className="font-bold font-logo text-[15px]"
-                />
-            </Tab>
-            <Tab>about</Tab>
-            <Tab>projects</Tab>
-            <Tab>experience</Tab>
-            <Tab>tools</Tab>
-            <Tab>contact</Tab>
-        </ul>
+        <nav>
+            <ul className="z-10 p-1 fixed mx-auto flex w-fit rounded-full bg-preferred-glass opacity-100 backdrop-blur-[10.5px]">
+                <a href="#home" title="Home">
+                    <Tab>
+                        <Gradient
+                            text="ab."
+                            className="font-bold font-logo text-[16px]"
+                        />
+                    </Tab>
+                </a>
+                <a href="#about" title="About">
+                    <Tab>about</Tab>
+                </a>
+                <a href="#projects" title="Projects">
+                    <Tab>projects</Tab>{' '}
+                </a>
+                <a href="#experience" title="Experience">
+                    <Tab>experience</Tab>
+                </a>
+                <a href="#tools" title="Tools">
+                    <Tab>tools</Tab>
+                </a>
+                <a href="#contact" title="Contact">
+                    <Tab>contact</Tab>
+                </a>
+            </ul>
+        </nav>
     );
 };
 

@@ -8,7 +8,7 @@ export const HomeIcon = ({ className }: { className?: string }) => (
         <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
         <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
     </svg>
-)
+);
 
 export const MoonIcon = ({ className }: { className?: string }) => (
     <svg
@@ -24,8 +24,8 @@ export const MoonIcon = ({ className }: { className?: string }) => (
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
     </svg>
-)
-  
+);
+
 export const SunIcon = ({ className }: { className?: string }) => (
     <svg
         className={className}
@@ -41,7 +41,7 @@ export const SunIcon = ({ className }: { className?: string }) => (
         <circle cx="12" cy="12" r="4"></circle>
         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
     </svg>
-)
+);
 
 export const GithubIcon = ({ className }: { className?: string }) => (
     <svg
@@ -52,8 +52,8 @@ export const GithubIcon = ({ className }: { className?: string }) => (
     >
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
     </svg>
-)
-  
+);
+
 export const LinkedInIcon = ({ className }: { className?: string }) => (
     <svg
         version="1.1"
@@ -78,8 +78,8 @@ export const LinkedInIcon = ({ className }: { className?: string }) => (
             L341.91,330.654L341.91,330.654z"
         />
     </svg>
-)
- 
+);
+
 export const ArrowLeftIcon = ({ className }: { className?: string }) => (
     <svg
         className={className}
@@ -96,8 +96,8 @@ export const ArrowLeftIcon = ({ className }: { className?: string }) => (
         <line x1="5" y1="12" x2="9" y2="16"></line>
         <line x1="5" y1="12" x2="9" y2="8"></line>
     </svg>
-)
-  
+);
+
 export const ExternalLinkIcon = ({ className }: { className?: string }) => (
     <svg
         className={className}
@@ -114,4 +114,4 @@ export const ExternalLinkIcon = ({ className }: { className?: string }) => (
         <line x1="10" y1="14" x2="20" y2="4"></line>
         <polyline points="15 4 20 4 20 9"></polyline>
     </svg>
-)
+);
