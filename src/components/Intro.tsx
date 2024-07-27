@@ -6,8 +6,8 @@ const Intro = () => {
         <section className="flex flex-col justify-center min-h-[600px] md:min-h-[750px]">
             <p className="font-bold text-gray-600">Hi, I am</p>
             <div
-                className="mt-4 flex flex-col rounded max-w-fit font-semibold font-mono text-5xl tracking-tight text-preferred-white 
-                bg-primary-800 px-2 pb-3 pt-2 whitespace-nowrap shadow-lg sm:flex-row sm:text-5xl lg:text-6xl"
+                className="mt-3 flex flex-col rounded max-w-fit font-semibold font-mono text-5xl tracking-tight text-preferred-white 
+                bg-primary-800 px-2 pb-3 pt-1 whitespace-nowrap shadow-lg sm:flex-row sm:text-5xl lg:text-6xl"
             >
                 <span className="mr-5">Ankit</span>
                 <span>Barana</span>
