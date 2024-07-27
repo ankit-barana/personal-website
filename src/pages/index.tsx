@@ -3,6 +3,7 @@ import { getAllProjectsData } from '@/services/projectService';
 import { Project } from '@/types/project';
 import Intro from '@/components/Intro';
 import Navbar from '@/components/Navbar';
+import About from '@/components/About';
 
 interface IndexProps {
     projects: Project[];
@@ -14,6 +15,7 @@ const Index: NextPage<IndexProps> = ({ projects }) => {
             <div className="w-full px-4 sm:px-8 lg:ml-20">
                 <Navbar />
                 <Intro />
+                <About />
             </div>
         </div>
     );
