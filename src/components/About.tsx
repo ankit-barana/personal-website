@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Gradient from './Gradient';
 
 const About = () => {
     return (
@@ -7,7 +6,7 @@ const About = () => {
             className="flex w-full flex-col items-center gap-x-8 pt-28 pb-36 md:flex-row md:pb-48"
             id="about"
         >
-            <div className="w-full">
+            <div className="w-[60%]">
                 <div className="flex w-full items-center">
                     <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
                         About Me
@@ -21,9 +20,9 @@ const About = () => {
                         tools, creating web applications, or just experimenting
                         with various algorithms. Initially a neuroscience major
                         at Oberlin College, I found a passion for coding while
-                        working in the Sensory Neuroscience Lab. Taking the Data
-                        Structures course gave me the needed push to declare a
-                        second major in computer science.
+                        working in the Sensory Neuroscience Lab. It wasn&apos;t
+                        until I took the Data Structures class that that I
+                        declared a second major in computer science.
                     </p>
                     {/* building stimuli, and untilizng
                         a range of data-analysis tools. */}
@@ -33,7 +32,8 @@ const About = () => {
                         it&apos;s collaborating with programmers or crafting
                         user experiences. That&apos;s why I strive for clean,
                         maintainable, and minimalistic solutions, from user
-                        interface to the underlying code structure
+                        interface to the underlying code structure and file
+                        organization.
                     </p>
                     <br />
                     <p>
@@ -46,8 +46,8 @@ const About = () => {
                 <Image
                     src="/images/me.jpg"
                     alt="a picture of me"
-                    width={500}
-                    height={500}
+                    width={243.75}
+                    height={325}
                     className="rounded shadow-md"
                 />
             </div>
