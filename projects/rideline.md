@@ -1,14 +1,15 @@
 ---
-title: 'Rideline'
-intro: 'Rideline is a shuttle tracking system for Oberlin College that allows admins and students to track shuttle locations, see estimated arrival times for predetermined stops, and notifies admins of over-speeding.'
-slug: 'rideline'
+title: 'Letterboxd Streaming Service Finder'
+intro: 'This site gathers movies from the given Letterbxd user's watchlist 
+and calculates which of the major streaming services have how many of the movies from the list.'
+slug: 'letterboxd-streaming-service-finder'
 tags:
   - Next.js
   - Node.js
   - PostgreSQL
-coverImage: '/images/projects/rideline.png'
-liveUrl: 'https://oberlin.edu/'
-repoUrl: 'https://github.com/ankit-barana/rideline/'
+coverImage: '/images/projects/letterboxd.png'
+liveUrl: 'https://letterboxd-streaming-service-finder.vercel.app/'
+repoUrl: 'https://github.com/ankit-barana/letterboxd-streaming-service-finder/'
 priority: 1
 ---
 
