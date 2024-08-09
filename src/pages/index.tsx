@@ -11,8 +11,8 @@ interface IndexProps {
 
 const Index: NextPage<IndexProps> = ({ projects }) => {
     return (
-        <div className="mx-auto max-w-6xl">
-            <div className="w-full px-4 sm:px-8 lg:ml-20">
+        <div className="mx-auto max-w-5xl">
+            <div className="w-full px-4 sm:px-8">
                 <Navbar />
                 <Intro />
                 <About />

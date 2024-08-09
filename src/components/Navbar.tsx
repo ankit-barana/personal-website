@@ -3,7 +3,7 @@ import Gradient from './Gradient';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="flex justify-center">
             <ul className="mt-8 z-10 p-1 fixed mx-auto flex w-fit rounded-full bg-preferred-glass opacity-100 backdrop-blur-[10.5px]">
                 <a href="#home" title="Home">
                     <Tab>

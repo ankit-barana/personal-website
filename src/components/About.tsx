@@ -6,7 +6,7 @@ const About = () => {
             className="flex w-full flex-col items-center gap-x-8 pt-28 pb-36 md:flex-row md:pb-48"
             id="about"
         >
-            <div className="w-[60%]">
+            <div className="w-full">
                 <div className="flex w-full items-center">
                     <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
                         About Me
@@ -35,19 +35,14 @@ const About = () => {
                         interface to the underlying code structure and file
                         organization.
                     </p>
-                    <br />
-                    <p>
-                        Here is a picture of me if you are wondering what I look
-                        like {':)'}
-                    </p>
                 </div>
             </div>
             <div className="mt-8 max-w-xs pr-5">
                 <Image
                     src="/images/me.jpg"
                     alt="a picture of me"
-                    width={243.75}
-                    height={325}
+                    width={262.5}
+                    height={350}
                     className="rounded shadow-md"
                 />
             </div>
