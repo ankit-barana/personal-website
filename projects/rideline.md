@@ -7,6 +7,7 @@ tags:
   - Next.js
   - Node.js
   - PostgreSQL
+  - Vercel
 coverImage: '/images/projects/letterboxd.png'
 liveUrl: 'https://letterboxd-streaming-service-finder.vercel.app/'
 repoUrl: 'https://github.com/ankit-barana/letterboxd-streaming-service-finder/'
