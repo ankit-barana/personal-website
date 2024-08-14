@@ -22,12 +22,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     title="Github Repository"
                     rel="noopener noreferrer"
                 >
-                    <GithubIcon
-                        className={clsx(
-                            'h-7 w-7 fill-white transition hover:fill-gray-300',
-                            fillColor
-                        )}
-                    />
+                    <GithubIcon className={clsx('h-7 w-7', fillColor)} />
                 </a>
             </li>
             <li>
@@ -38,10 +33,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     rel="noopener noreferrer"
                 >
                     <ExternalLinkIcon
-                        className={clsx(
-                            'h-7 w-7 stroke-white transition hover:stroke-gray-300',
-                            strokeColor
-                        )}
+                        className={clsx('h-7 w-7', strokeColor)}
                     />
                 </a>
             </li>
@@ -60,13 +52,19 @@ const Project = ({ project }: { project: Thumbnail }) => {
                         priority % 2 === 0 ? 'left-3' : 'right-3'
                     )}
                 >
-                    {links(repoUrl, liveUrl, 'py-2 px-3')}
+                    {links(
+                        repoUrl,
+                        liveUrl,
+                        'py-2 px-3',
+                        'fill-white transition hover:fill-gray-300',
+                        'stroke-white transition hover:stroke-gray-300'
+                    )}
                 </div>
                 <NextLink href={`/projects/${slug}`}>
                     <Image
                         src={coverImage}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                         alt="A picture of the project"
                         className="rounded brightness-100 saturate-[.8] transition group-hover:scale-110 group-hover:saturate-100"
                     />

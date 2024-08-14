@@ -3,7 +3,7 @@ import Project from './Project';
 
 const Projects = ({ projects }: { projects: Thumbnail[] }) => {
     return (
-        <section className="py-36 md:py-48 w-6xl" id="projects">
+        <section className="py-36 md:py-48" id="projects">
             <div className="flex w-full items-center">
                 <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
                     Projects

@@ -9,7 +9,7 @@ const Gradient = ({
 }) => (
     <span
         className={clsx(
-            'bg-gradient-to-r from-primary-800 to-primary-100 font-semibold text-transparent bg-clip-text',
+            'bg-gradient-to-r from-primary-800 to-primary-200 font-semibold text-transparent bg-clip-text',
             className
         )}
     >
