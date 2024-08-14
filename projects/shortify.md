@@ -6,7 +6,7 @@ tags:
     - Rust
     - Rocket
     - Yew
-    - RUSQL
+    - Rusqlite
     - Heroku
 coverImage: '/images/projects/shortify.png'
 liveUrl: 'https://shortify.herokuapp.com/'

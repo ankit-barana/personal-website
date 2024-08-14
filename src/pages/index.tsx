@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Skills from '@/components/Skills';
 
 interface IndexProps {
     projects: Project[];
@@ -14,11 +15,12 @@ interface IndexProps {
 const Index: NextPage<IndexProps> = ({ projects }) => {
     return (
         <div className="mx-auto max-w-5xl">
-            <div className="w-full px-4 sm:px-8">
+            <div className="w-full px-5 sm:px-8">
                 <Navbar />
                 <Intro />
                 <About />
                 <Projects projects={projects} />
+                <Skills />
                 <Contact />
             </div>
         </div>

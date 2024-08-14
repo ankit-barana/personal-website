@@ -24,8 +24,6 @@ const About = () => {
                         until I took the Data Structures class that I declared a
                         second major in computer science.
                     </p>
-                    {/* building stimuli, and untilizng
-                        a range of data-analysis tools. */}
                     <br />
                     <p>
                         I think programming is akin to communication, whether
