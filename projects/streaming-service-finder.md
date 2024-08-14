@@ -1,17 +1,17 @@
 ---
-title: 'Shortify'
-intro: 'I loved programming in rust for my Systems Programming class and wanted to get my hands on web development in this project. Shortify is a  URL shortener that allows users to generate random or custom URLs. '
-slug: 'shortify'
+title: 'Streaming Service Finder'
+intro: 'This site gathers movies from the  Letterboxd user''s watchlist 
+and calculates which of the major streaming services have how many movies from the list.'
+slug: 'streaming-service-finder'
 tags:
-    - Rust
-    - Rocket
-    - Yew
-    - RUSQL
-    - Heroku
-coverImage: '/images/projects/shortify.png'
-liveUrl: 'https://shortify.herokuapp.com/'
-repoUrl: 'https://github.com/ankit-barana/shortify/'
-priority: 1
+  - Next.js
+  - Node.js
+  - PostgreSQL
+  - Vercel
+coverImage: '/images/projects/streaming-service-finder.png'
+liveUrl: 'https://streaming-service-finder.vercel.app/'
+repoUrl: 'https://github.com/ankit-barana/streaming-service-finder/'
+priority: 3
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Molestie ac feugiat sed lectus vestibulum. Donec enim diam vulputate ut pharetra sit amet aliquam. Accumsan in nisl nisi scelerisque eu ultrices.

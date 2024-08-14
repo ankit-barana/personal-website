@@ -1,17 +1,15 @@
 ---
-title: 'Letterboxd Streaming Service Finder'
-intro: 'This site gathers movies from the given Letterbxd user's watchlist 
-and calculates which of the major streaming services have how many of the movies from the list.'
-slug: 'letterboxd-streaming-service-finder'
+title: 'LK Lab Website'
+intro: 'A simple website for the Sensory Neuroscience Lab at Oberlin College built with Jekyll. It showcases our past and ongoing research, introduces our alumni and current lab members, and provides visitors with a platform to express their interest in joining the lab.'
+slug: 'lk-lab-website'
 tags:
-  - Next.js
-  - Node.js
-  - PostgreSQL
-  - Vercel
-coverImage: '/images/projects/letterboxd.png'
-liveUrl: 'https://letterboxd-streaming-service-finder.vercel.app/'
-repoUrl: 'https://github.com/ankit-barana/letterboxd-streaming-service-finder/'
-priority: 1
+    - Jekyll
+    - CSS
+    - JavaScript
+coverImage: '/images/projects/lk-lab-website.png'
+liveUrl: 'https://lklab.github.io/'
+repoUrl: 'https://github.com/ankit-barana/lklab.github.io/'
+priority: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Molestie ac feugiat sed lectus vestibulum. Donec enim diam vulputate ut pharetra sit amet aliquam. Accumsan in nisl nisi scelerisque eu ultrices.

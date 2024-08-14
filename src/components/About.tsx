@@ -21,8 +21,8 @@ const About = () => {
                         with various algorithms. Initially a neuroscience major
                         at Oberlin College, I found a passion for coding while
                         working in the Sensory Neuroscience Lab. It wasn&apos;t
-                        until I took the Data Structures class that that I
-                        declared a second major in computer science.
+                        until I took the Data Structures class that I declared a
+                        second major in computer science.
                     </p>
                     {/* building stimuli, and untilizng
                         a range of data-analysis tools. */}
@@ -35,14 +35,19 @@ const About = () => {
                         interface to the underlying code structure and file
                         organization.
                     </p>
+                    <br />
+                    <p>
+                        To put a face to my name, here&apos;s a photo of me
+                        :&#41;
+                    </p>
                 </div>
             </div>
-            <div className="mt-8 max-w-xs pr-5">
+            <div className="mt-12 max-w-xs pr-5">
                 <Image
                     src="/images/me.jpg"
                     alt="a picture of me"
-                    width={262.5}
-                    height={350}
+                    width={300}
+                    height={400}
                     className="rounded shadow-md"
                 />
             </div>

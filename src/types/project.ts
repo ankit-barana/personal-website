@@ -6,7 +6,7 @@ export type Project = {
     coverImage: string
     liveUrl: string
     repoUrl: string
-    priority: 1 | 2 | 3
+    priority: number
     content: string
 }
 

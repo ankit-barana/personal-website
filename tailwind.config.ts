@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  ], 
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         primary: {
           100: '#E88D67',
-          200: '#D1999C',
+          200: '#D18286',//D1999C
           300: '#BB999C',
           400: '#BFC7EE',
           500: '#AA99C3',
@@ -24,11 +24,9 @@ const config: Config = {
           700: '#8A92DE',
           800: '#7B8CDE',
         },
-        preferred: {
-          white: '#F5F3EF',
-          gray: '#4B5563',
-          glass: '#d9d9d9b3',
-          
+        secondary: {
+          pink: '#DBADB0',
+          glass: '#D9D9D9B3',
         },
       },
     },

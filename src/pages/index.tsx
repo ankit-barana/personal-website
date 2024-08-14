@@ -4,6 +4,7 @@ import { Project } from '@/types/project';
 import Intro from '@/components/Intro';
 import Navbar from '@/components/Navbar';
 import About from '@/components/About';
+import Projects from '@/components/Projects';
 
 interface IndexProps {
     projects: Project[];
@@ -16,6 +17,7 @@ const Index: NextPage<IndexProps> = ({ projects }) => {
                 <Navbar />
                 <Intro />
                 <About />
+                <Projects projects={projects} />
             </div>
         </div>
     );
