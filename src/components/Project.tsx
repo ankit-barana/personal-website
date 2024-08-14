@@ -7,7 +7,13 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 
 const Project = ({ project }: { project: Thumbnail }) => {
-    const links = (repoUrl: string, liveUrl: string, className?: string) => (
+    const links = (
+        repoUrl: string,
+        liveUrl: string,
+        className?: string,
+        fillColor?: string,
+        strokeColor?: string
+    ) => (
         <ul className={clsx('flex gap-4', className)}>
             <li>
                 <a
@@ -16,7 +22,12 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     title="Github Repository"
                     rel="noopener noreferrer"
                 >
-                    <GithubIcon className="h-7 w-7 fill-primary-600 transition hover:fill-primary-800" />
+                    <GithubIcon
+                        className={clsx(
+                            'h-7 w-7 fill-white transition hover:fill-gray-300',
+                            fillColor
+                        )}
+                    />
                 </a>
             </li>
             <li>
@@ -26,7 +37,12 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     title="Live Link"
                     rel="noopener noreferrer"
                 >
-                    <ExternalLinkIcon className="h-7 w-7 stroke-primary-600 transition hover:stroke-primary-800" />
+                    <ExternalLinkIcon
+                        className={clsx(
+                            'h-7 w-7 stroke-white transition hover:stroke-gray-300',
+                            strokeColor
+                        )}
+                    />
                 </a>
             </li>
         </ul>
@@ -41,7 +57,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                 <div
                     className={clsx(
                         'absolute top-3 z-20 hidden rounded-full bg-primary-700 md:block',
-                        priority === 2 ? 'right-3' : 'left-3'
+                        priority % 2 === 0 ? 'left-3' : 'right-3'
                     )}
                 >
                     {links(repoUrl, liveUrl, 'py-2 px-3')}
@@ -60,9 +76,9 @@ const Project = ({ project }: { project: Thumbnail }) => {
             <div
                 className={clsx(
                     'flex w-full flex-col md:min-h-[300px]',
-                    priority === 2
-                        ? 'md:order-1 md:mr-6'
-                        : 'md:order-2 md:ml-10'
+                    priority % 2 === 0
+                        ? 'md:order-2 md:ml-10'
+                        : 'md:order-1 md:mr-6'
                 )}
             >
                 <ul className="flex gap-6">
@@ -85,7 +101,13 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     <Link href={`/projects/${slug}`}>Read more</Link>
                 </div>
                 <span className="fill-primary-700 stroke-primary-700"></span>
-                {links(repoUrl, liveUrl)}
+                {links(
+                    repoUrl,
+                    liveUrl,
+                    undefined,
+                    'fill-primary-600 transition hover:fill-primary-800',
+                    'stroke-primary-600 transition hover:stroke-primary-800'
+                )}
             </div>
         </li>
     );

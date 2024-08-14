@@ -27,7 +27,7 @@ export const getProjectsSlugs = () => {
     return (
         fs.
             readdirSync(projectDirectory).
-            map((file) => file.replace('.md', ''))
+            map((file) => file.replace(/\.md$/, ''))
     )
 }
  
@@ -45,7 +45,8 @@ export const getAllProjectsData = () => {
             'priority',
             'content'
         ])
-    )
+    ).sort((a, b) => Number(a.priority) - Number(b.priority))
+    
     return projects
 }
 
@@ -58,7 +59,6 @@ export const getProjectBySlug = (slug: string) => {
         'coverImage',
         'liveUrl',
         'repoUrl',
-        'priority',
         'content'
     ])
     return project

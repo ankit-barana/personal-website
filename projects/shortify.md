@@ -11,7 +11,7 @@ tags:
 coverImage: '/images/projects/shortify.png'
 liveUrl: 'https://shortify.herokuapp.com/'
 repoUrl: 'https://github.com/ankit-barana/shortify/'
-priority: 1
+priority: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Molestie ac feugiat sed lectus vestibulum. Donec enim diam vulputate ut pharetra sit amet aliquam. Accumsan in nisl nisi scelerisque eu ultrices.
