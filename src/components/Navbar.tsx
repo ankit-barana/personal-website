@@ -19,8 +19,8 @@ const Navbar = () => {
                 <a href="#projects" title="Projects">
                     <Tab>projects</Tab>{' '}
                 </a>
-                <a href="#experience" title="Experience">
-                    <Tab>experience</Tab>
+                <a href="#work" title="Work">
+                    <Tab>Work</Tab>
                 </a>
                 <a href="#skills" title="Skills">
                     <Tab>tools</Tab>

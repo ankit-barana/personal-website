@@ -56,6 +56,8 @@ const Skills = () => {
                 'SPSS',
                 'GraphPad Prism',
                 'Experiment Builder',
+                'Eyelink Plus',
+                'BrainVision',
                 'Eprime-3',
             ],
         },
@@ -80,7 +82,7 @@ const Skills = () => {
                             </p>
                         </div>
 
-                        <ul className="mt-6 flex flex-wrap gap-3">
+                        <ul className="mt-4 flex flex-wrap gap-3">
                             {skill.items.map((item) => (
                                 <Badge key={item} variant="outline" size="lg">
                                     {item}
