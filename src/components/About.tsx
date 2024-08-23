@@ -41,8 +41,8 @@ const About = () => {
                 </div>
             </div>
             <div className="mt-12 max-w-64 md:max-w-xs pr-5">
-                <img
-                    src="/images/me.jpg"
+                <Image
+                    src="/images/me.png"
                     alt="a picture of me"
                     width={300}
                     height={400}

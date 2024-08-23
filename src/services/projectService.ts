@@ -50,7 +50,7 @@ export const getAllProjectsData = () => {
     return projects
 }
 
-export const getProjectBySlug = (slug: string) => {
+const getProjectBySlug = (slug: string) => {
     const project = getProject(slug, [
         'title',
         'intro',

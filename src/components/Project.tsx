@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Badge from './Badge';
 import Link from './Link';
-import { GithubIcon, ExternalLinkIcon } from './icons';
+import { GithubIcon } from './icons';
 import { Thumbnail } from '@/types/project';
 import Image from 'next/image';
 import NextLink from 'next/link';
