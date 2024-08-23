@@ -7,37 +7,17 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 
 const Project = ({ project }: { project: Thumbnail }) => {
-    const links = (
-        repoUrl: string,
-        liveUrl: string,
-        className?: string,
-        fillColor?: string,
-        strokeColor?: string
-    ) => (
-        <ul className={clsx('flex gap-4', className)}>
-            <li>
-                <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    title="Github Repository"
-                    rel="noopener noreferrer"
-                >
-                    <GithubIcon className={clsx('h-7 w-7', fillColor)} />
-                </a>
-            </li>
-            <li>
-                <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    title="Live Link"
-                    rel="noopener noreferrer"
-                >
-                    <ExternalLinkIcon
-                        className={clsx('h-7 w-7', strokeColor)}
-                    />
-                </a>
-            </li>
-        </ul>
+    const links = (repoUrl: string, liveUrl: string, className?: string) => (
+        <div className={className}>
+            <a
+                href={project.repoUrl}
+                target="_blank"
+                title="Github Repository"
+                rel="noopener noreferrer"
+            >
+                <GithubIcon className="fill-primary-600 transition hover:fill-primary-800" />
+            </a>
+        </div>
     );
 
     const { title, intro, slug, tags, coverImage, liveUrl, repoUrl, priority } =
@@ -46,29 +26,13 @@ const Project = ({ project }: { project: Thumbnail }) => {
     return (
         <li className="flex flex-col md:flex-row">
             <div className="group relative order-1 mt-5 min-h-[14rem] w-full shrink-0 md:order-2 md:mt-0 md:w-3/5 overflow-hidden">
-                <div
-                    className={clsx(
-                        'absolute top-3 z-20 hidden rounded-full bg-primary-700 md:block',
-                        priority % 2 === 0 ? 'left-3' : 'right-3'
-                    )}
-                >
-                    {links(
-                        repoUrl,
-                        liveUrl,
-                        'py-2 px-3',
-                        'fill-white transition hover:fill-gray-300',
-                        'stroke-white transition hover:stroke-gray-300'
-                    )}
-                </div>
-                <NextLink href={`/projects/${slug}`}>
-                    <Image
-                        src={coverImage}
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        alt="A picture of the project"
-                        className="rounded brightness-100 saturate-[.8] transition group-hover:scale-110 group-hover:saturate-100"
-                    />
-                </NextLink>
+                <Image
+                    src={coverImage}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    alt="A picture of the project"
+                    className="rounded brightness-100 saturate-[.8] transition group-hover:scale-110 group-hover:saturate-100"
+                />
             </div>
 
             <div
@@ -79,7 +43,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                         : 'md:order-1 md:mr-6'
                 )}
             >
-                <ul className="flex gap-6">
+                <ul className="flex gap-x-4 gap-y-3 flex-wrap">
                     {tags.map((tag) => (
                         <li key={tag}>
                             <Badge>{tag}</Badge>
@@ -90,22 +54,18 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     {title}
                 </h4>
                 <p className="mt-4 text-gray-600">{intro}</p>
-                <div className="hidden h-full items-end md:flex">
-                    <Link href={`/projects/${slug}`}>Read More</Link>
+                <div className="mt-5 hidden md:flex items-center gap-5">
+                    {links(repoUrl, liveUrl, 'h-7 w-7')}
+                    <div className="flex h-full items-end ">
+                        <Link href={project.liveUrl}>Live Demo</Link>
+                    </div>
                 </div>
             </div>
             <div className="order-last mt-4 flex items-center justify-between md:hidden">
                 <div className="flex h-full items-end">
-                    <Link href={`/projects/${slug}`}>Read more</Link>
+                    <Link href={project.liveUrl}>Live Demo</Link>
                 </div>
-                <span className="fill-primary-700 stroke-primary-700"></span>
-                {links(
-                    repoUrl,
-                    liveUrl,
-                    undefined,
-                    'fill-primary-600 transition hover:fill-primary-800',
-                    'stroke-primary-600 transition hover:stroke-primary-800'
-                )}
+                {links(repoUrl, liveUrl, 'h-7 w-7')}
             </div>
         </li>
     );

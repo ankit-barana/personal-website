@@ -12,7 +12,7 @@ const Badge = ({ variant = 'fill', size = 'md', children }: BadgeProps) => {
         <span
             className={clsx(
                 variant === 'fill' &&
-                    'rounded-lg bg-primary-700 px-2 py-1 text-sm text-white transition-colors hover:bg-primary-700/80',
+                    'rounded-lg bg-primary-800 px-2 py-1 text-sm text-white transition-colors hover:bg-primary-800/80',
                 variant === 'outline' &&
                     'rounded-lg px-2 py-1 text-sm border border-gray-700 bg-transparent text-gray-700 hover:bg-gray-700/10',
                 size === 'lg' && 'px-3 py-2 text-base'

@@ -1,55 +1,61 @@
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import { HomeIcon } from './icons';
+import Tab from './Tab';
+import Link from 'next/link';
 import clsx from 'clsx';
-import Gradient from './Gradient';
 
-const Navbar = () => {
+const Navbar = ({ className }: { className?: string }) => {
+    const router = useRouter();
+
+    const navLinks = [
+        {
+            name: 'about',
+            link: '#about',
+        },
+        {
+            name: 'projects',
+            link: '#projects',
+        },
+        {
+            name: 'work',
+            link: '#work',
+        },
+        {
+            name: 'tools',
+            link: '#tools',
+        },
+        {
+            name: 'contact',
+            link: '#contact',
+        },
+    ];
+
     return (
-        <nav className="flex justify-center">
-            <ul className="mt-8 z-50 p-1 fixed mx-auto flex w-fit rounded-full bg-secondary-glass opacity-100 backdrop-blur-[10.5px]">
-                <a href="#home" title="Home">
-                    <Tab>
-                        <Gradient
-                            text="ab."
-                            className="font-bold font-logo text-[16px]"
-                        />
+        <nav
+            className={clsx(
+                'mt-8 z-50 flex justify-center fixed m-auto left-0 right-0 bottom-4 md:bottom-auto',
+                className
+            )}
+        >
+            <ul className="p-1 mx-auto flex items-center w-fit max-w-7xl rounded-full bg-colors-glass opacity-100 backdrop-blur-[10.5px]">
+                <Link href="#home" title="Home">
+                    <Tab className="px-[17px]">
+                        <HomeIcon className="h-[18px] w-[18px] sm:h-5 sm:w-5" />
                     </Tab>
-                </a>
-                <a href="#about" title="About">
-                    <Tab>about</Tab>
-                </a>
-                <a href="#projects" title="Projects">
-                    <Tab>projects</Tab>{' '}
-                </a>
-                <a href="#work" title="Work">
-                    <Tab>Work</Tab>
-                </a>
-                <a href="#skills" title="Skills">
-                    <Tab>tools</Tab>
-                </a>
-                <a href="#contact" title="Contact">
-                    <Tab>contact</Tab>
-                </a>
+                </Link>
+                {navLinks.map((navLink) => (
+                    <Link
+                        key={navLink.name}
+                        href={navLink.link}
+                        title={navLink.name}
+                    >
+                        <Tab>{navLink.name}</Tab>
+                    </Link>
+                ))}
             </ul>
         </nav>
     );
 };
-
-const Tab = ({
-    className,
-    children,
-}: {
-    className?: string;
-    children?: React.ReactNode;
-}) => (
-    <li
-        className={clsx(
-            'relative w-fit bg-primary-400 rounded-full md:px-[22px] md:py-2',
-            'text-center text-black font-[350] text-[15px] tracking-[0.1px]',
-            'bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-700',
-            className
-        )}
-    >
-        {children}
-    </li>
-);
 
 export default Navbar;

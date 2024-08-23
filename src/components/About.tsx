@@ -3,7 +3,7 @@ import Image from 'next/image';
 const About = () => {
     return (
         <section
-            className="flex w-full flex-col items-center gap-x-8 py-36 md:py-48 md:flex-row"
+            className="flex w-full flex-col items-center gap-x-8 py-40 md:py-40 md:flex-row"
             id="about"
         >
             <div className="w-full">
@@ -21,12 +21,12 @@ const About = () => {
                         with various algorithms. Initially a neuroscience major
                         at Oberlin College, I found a passion for coding while
                         working in the Sensory Neuroscience Lab. It wasn&apos;t
-                        until I took the Data Structures class that I declared a
-                        second major in computer science.
+                        until I took the Data Structures class, however, that I
+                        declared a second major in computer science.
                     </p>
                     <br />
                     <p>
-                        I think programming is akin to communication, whether
+                        I think of programming as akin to communication, whether
                         it&apos;s collaborating with programmers or crafting
                         user experiences. That&apos;s why I strive for clean,
                         maintainable, and minimalistic solutions, from user
@@ -40,13 +40,13 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="mt-12 max-w-xs pr-5">
+            <div className="mt-12 max-w-64 md:max-w-xs pr-5">
                 <Image
                     src="/images/me.jpg"
                     alt="a picture of me"
                     width={300}
                     height={400}
-                    className="rounded shadow-md"
+                    className="rounded shadow-md brightness-100 saturate-100 "
                 />
             </div>
         </section>

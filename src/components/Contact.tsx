@@ -1,11 +1,12 @@
 import { useRouter } from 'next/router';
 import { GithubIcon, LinkedInIcon } from './icons';
 import Button from './Button';
+import ResumeButton from './ResumeButton';
 
 const Contact = () => {
     const router = useRouter();
     return (
-        <section className="py-36 md:py-48" id="contact">
+        <section className="py-36 md:py-40" id="contact">
             <div className="flex w-full items-center">
                 <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
                     Contact
@@ -18,7 +19,8 @@ const Contact = () => {
                     &#40;linked below&#41;. Looking forward to hearing from you!
                 </p>
                 <div className="mt-10 flex flex-col justify-center gap-y-6 sm:flex-row sm:items-center sm:justify-start">
-                    <div>
+                    <div className="flex items-center gap-4">
+                        <ResumeButton />
                         <Button
                             className="after:left-[-150%]"
                             onClick={() =>

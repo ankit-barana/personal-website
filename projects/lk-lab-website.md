@@ -1,6 +1,6 @@
 ---
 title: 'LK Lab Website'
-intro: 'A simple website for the Sensory Neuroscience Lab at Oberlin College built with Jekyll. It showcases our past and ongoing research, introduces our alumni and current lab members, and provides visitors with a platform to express their interest in joining the lab.'
+intro: 'A  website built with Jekyll for the Sensory Neuroscience Lab at Oberlin College built. It showcases our past and ongoing research, introduces our alumni and current lab members, and provides visitors with a platform to express their interest in joining the lab.'
 slug: 'lk-lab-website'
 tags:
     - Jekyll

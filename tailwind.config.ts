@@ -24,9 +24,16 @@ const config: Config = {
           700: '#8A92DE',
           800: '#7B8CDE',
         },
-        secondary: {
-          pink: '#DBADB0',
+        colors: {
+          light: '#F5F3EF',
+          dark: '#191B20',
+          cream: '#EEECE6',
           glass: '#D9D9D9B3',
+          pink: '#DBADB0',
+          purple: '#D2D4FF',
+          neon: '#C9FD74',
+          gray: '#d1d5db',
+          
         },
       },
     },

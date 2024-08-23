@@ -1,14 +1,4 @@
-export const HomeIcon = ({ className }: { className?: string }) => (
-    <svg
-        className={className}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-    >
-        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-    </svg>
-);
+import clsx from 'clsx';
 
 export const MoonIcon = ({ className }: { className?: string }) => (
     <svg
@@ -98,12 +88,13 @@ export const ExternalLinkIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
-export const BrainIcon = ({ className }: { className?: string }) => (
+export const EEGIcon = ({ className }: { className?: string }) => (
     <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         width="512.000000pt"
         height="512.000000pt"
+        className={className}
         viewBox="0 0 512.000000 512.000000"
         preserveAspectRatio="xMidYMid meet"
     >
@@ -123,8 +114,51 @@ export const WorkshopIcon = ({ className }: { className?: string }) => (
         width="32"
         height="32"
         fill="#ffffff"
+        className={className}
         viewBox="0 0 256 256"
     >
         <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H53.39a8,8,0,0,0,7.23-4.57,48,48,0,0,1,86.76,0,8,8,0,0,0,7.23,4.57H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM104,168a32,32,0,1,1,32-32A32,32,0,0,1,104,168Zm112,32H159.43a63.93,63.93,0,0,0-13.16-16H192a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v96a8,8,0,0,0,6,7.75A63.72,63.72,0,0,0,48.57,200H40V56H216Z"></path>
     </svg>
 );
+
+export const CodepathIcon = ({ className }: { className?: string }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#ffffff"
+        className={className}
+        viewBox="0 0 256 256"
+    >
+        <path d="M71.68,97.22,34.74,128l36.94,30.78a12,12,0,1,1-15.36,18.44l-48-40a12,12,0,0,1,0-18.44l48-40A12,12,0,0,1,71.68,97.22Zm176,21.56-48-40a12,12,0,1,0-15.36,18.44L221.26,128l-36.94,30.78a12,12,0,1,0,15.36,18.44l48-40a12,12,0,0,0,0-18.44ZM164.1,28.72a12,12,0,0,0-15.38,7.18l-64,176a12,12,0,0,0,7.18,15.37A11.79,11.79,0,0,0,96,228a12,12,0,0,0,11.28-7.9l64-176A12,12,0,0,0,164.1,28.72Z"></path>
+    </svg>
+);
+
+export const HomeIcon = ({ className }: { className?: string }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#000000"
+        className={className}
+        viewBox="0 0 256 256"
+    >
+        <path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4Z"></path>
+    </svg>
+);
+
+export const ArrowIcon = ({ className }: { className?: string }) => {
+    <svg
+        width="9"
+        height="8"
+        viewBox="0 0 9 8"
+        fill="none"
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M8.49966 1.01851C8.50988 0.742553 8.29446 0.510563 8.01851 0.500342L3.52159 0.33379C3.24564 0.32357 3.01365 0.538989 3.00343 0.814942C2.99321 1.09089 3.20862 1.32288 3.48458 1.33311L7.48184 1.48115L7.33379 5.47841C7.32357 5.75436 7.53899 5.98635 7.81494 5.99657C8.09089 6.0068 8.32288 5.79138 8.3331 5.51542L8.49966 1.01851ZM1.34023 7.8664L8.34023 1.3664L7.65977 0.633603L0.659774 7.1336L1.34023 7.8664Z"
+            fill="#4479E2"
+        ></path>
+    </svg>;
+};
