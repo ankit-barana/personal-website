@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Button from './Button';
+import Link from 'next/link';
 
 interface ResumeButtonProps {
     className?: string;
@@ -9,7 +10,9 @@ interface ResumeButtonProps {
 const ResumeButton = ({ className, size }: ResumeButtonProps) => {
     return (
         <div className={className}>
-            <Button className={className}>Resume</Button>
+            <Link href="/documents/resume.pdf" target="_blank">
+                <Button className={className}>Resume</Button>
+            </Link>
         </div>
     );
 };
