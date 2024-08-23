@@ -8,7 +8,7 @@ const Work = () => {
             title: 'Research Assistant',
             organization: 'Leslie Kwakye Lab at Oberlin College',
             duration: 'Summer 2022 - Present',
-            priority: 2,
+            priority: 1,
             intro: 'At the LK Lab, I work on experimental design, development, and analysis of behavioral, EEG, and eye-tracking data for research on the interaction between attention and multisensory integration. I also engaged in weekly planning sessions and journal clubs and presented research findings both on and off-campus.',
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 transition-transform hover:rotate-[20deg] hover:duration-200">
@@ -39,7 +39,7 @@ const Work = () => {
                     React-based experiments.
                 </p>
             ),
-            priority: 1,
+            priority: 2,
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 hover:bg-primary-800 transition-transform hover:rotate-[20deg] hover:duration-200">
                     <CodepathIcon className="h-8 w-8" />
