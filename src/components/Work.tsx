@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { EEGIcon, WorkshopIcon, CodepathIcon, ExternalLinkIcon } from './icons';
+import { EEGIcon, WorkshopIcon, CodeIcon, ExternalLinkIcon } from './icons';
 import Gradient from './Gradient';
 
 const Work = () => {
@@ -9,7 +9,7 @@ const Work = () => {
             organization: 'Leslie Kwakye Lab at Oberlin College',
             duration: 'Summer 2022 - Present',
             priority: 1,
-            intro: 'At the LK Lab, I work on experimental design, development, and analysis of behavioral, EEG, and eye-tracking data for research on the interaction between attention and multisensory integration. I also engaged in weekly planning sessions and journal clubs and presented research findings both on and off-campus.',
+            intro: 'At the LK Lab, I work on experimental design, development, and analysis of behavioral, EEG, and eye-tracking data for research on the interaction between attention and multisensory integration. I also engage in weekly planning sessions and journal clubs, and present our research findings on and off-campus.',
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 transition-transform hover:rotate-[20deg] hover:duration-200">
                     <EEGIcon className="h-11 w-11" />
@@ -34,15 +34,14 @@ const Work = () => {
                         <ExternalLinkIcon className="ml-1 h-5 w-5" />
                     </Link>{' '}
                     with OpenAI API to visualize patient-reported
-                    hallucinations, and collaborated with labmates, including
-                    PhD and MD-PhD candidates, in developing and debugging their
-                    React-based experiments.
+                    hallucinations, and collaborated with other lab members in
+                    developing and debugging multiple React-based experiments.
                 </p>
             ),
             priority: 2,
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 hover:bg-primary-800 transition-transform hover:rotate-[20deg] hover:duration-200">
-                    <CodepathIcon className="h-8 w-8" />
+                    <CodeIcon className="h-8 w-8" />
                 </div>
             ),
         },
@@ -51,7 +50,7 @@ const Work = () => {
             organization: 'Smartphone Workshops',
             duration: 'Summer 2021',
             priority: 3,
-            intro: 'I worked with the village council to design and organize smartphone workshops in my and nearby villages to promote digital literacy within the community, focussing on UPI payments and relevant e-commerce strategies.',
+            intro: 'I collaborated with the village council to design and organize smartphone workshops in my village and neighbouring communities to promote digital literacy with a focus on UPI payments and relevant e-commerce strategies.',
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 hover:bg-primary-800 transition-transform hover:rotate-[20deg] hover:duration-200">
                     <WorkshopIcon className="h-8 w-8" />

@@ -1,6 +1,6 @@
 ---
 title: 'Shortify'
-intro: 'Shortify is a  URL shortener that allows users to generate random or custom URLs. I loved programming in rust for my Systems Programming class and wanted to get my hands on web development in this project.'
+intro: 'Shortify is a  URL shortener that allows users to generate random or custom short URLs. I loved programming in rust for my Systems Programming class and wanted to get my hands on web development in this project.'
 slug: 'shortify'
 tags:
     - Rust

@@ -121,7 +121,7 @@ export const WorkshopIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
-export const CodepathIcon = ({ className }: { className?: string }) => (
+export const CodeIcon = ({ className }: { className?: string }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"
@@ -147,18 +147,14 @@ export const HomeIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
-export const ArrowIcon = ({ className }: { className?: string }) => {
+export const DownArrowIcon = ({ className }: { className?: string }) => (
     <svg
-        width="9"
-        height="8"
-        viewBox="0 0 9 8"
-        fill="none"
-        className={className}
         xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#000000"
+        viewBox="0 0 256 256"
     >
-        <path
-            d="M8.49966 1.01851C8.50988 0.742553 8.29446 0.510563 8.01851 0.500342L3.52159 0.33379C3.24564 0.32357 3.01365 0.538989 3.00343 0.814942C2.99321 1.09089 3.20862 1.32288 3.48458 1.33311L7.48184 1.48115L7.33379 5.47841C7.32357 5.75436 7.53899 5.98635 7.81494 5.99657C8.09089 6.0068 8.32288 5.79138 8.3331 5.51542L8.49966 1.01851ZM1.34023 7.8664L8.34023 1.3664L7.65977 0.633603L0.659774 7.1336L1.34023 7.8664Z"
-            fill="#4479E2"
-        ></path>
-    </svg>;
-};
+        <path d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"></path>
+    </svg>
+);
