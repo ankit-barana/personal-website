@@ -1,15 +1,17 @@
 import clsx from 'clsx';
 
-const Gradient = ({
-    text,
-    className,
-}: {
+interface GradientProps {
     text: string;
-    className?: string;
-}) => (
+    className: string;
+    range: 'sm';
+}
+
+const Gradient = ({ text, className, range }: GradientProps) => (
     <span
         className={clsx(
             'bg-gradient-to-r from-primary-800 to-primary-100 font-semibold text-transparent bg-clip-text',
+            range === 'sm' &&
+                'bg-gradient-to-r from-primary-800 to-primary-300',
             className
         )}
     >

@@ -24,7 +24,7 @@ const config: Config = {
           700: '#8A92DE',
           800: '#7B8CDE',
         },
-        colors: {
+        secondary: {
           light: '#F5F3EF',
           dark: '#191B20',
           cream: '#EEECE6',

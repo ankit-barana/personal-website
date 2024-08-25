@@ -85,7 +85,6 @@ const Work = () => {
                                 <div className="mt-2 h-36 w-2 bg-gray-200 sm:h-32 md:h-20" />
                             </div>
                             <div>
-                                {/* className="group group-hover:p-3 group-hover:rounded-lg group-hover:bg-colors-cream group-hover:border group-hover:border-1 group-hover:border-colors-gray" */}
                                 <h3 className="text-xl font-semibold text-black">
                                     {work.organization}
                                 </h3>
