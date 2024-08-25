@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { EEGIcon, WorkshopIcon, CodeIcon, ExternalLinkIcon } from './icons';
-import Gradient from './Gradient';
+import { EEGIcon, WorkshopIcon, CodeIcon, ExternalLinkIcon } from './../icons';
+import Gradient from '../Gradient';
 
 const Work = () => {
     const works = [

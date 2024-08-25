@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import Button from './Button';
 import Link from 'next/link';
 

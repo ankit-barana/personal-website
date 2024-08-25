@@ -1,5 +1,5 @@
-import { Thumbnail } from '../types/project';
-import Project from './Project';
+import { Thumbnail } from '../../types/project';
+import Project from '../Project';
 
 const Projects = ({ projects }: { projects: Thumbnail[] }) => {
     return (

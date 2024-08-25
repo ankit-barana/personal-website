@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import { GithubIcon, LinkedInIcon } from './icons';
-import Button from './Button';
-import ResumeButton from './ResumeButton';
+import { GithubIcon, LinkedInIcon } from './../icons';
+import Button from '../Button';
+import ResumeButton from '../ResumeButton';
 
 const Contact = () => {
     const router = useRouter();

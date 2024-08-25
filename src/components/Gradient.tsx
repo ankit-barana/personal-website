@@ -2,8 +2,8 @@ import clsx from 'clsx';
 
 interface GradientProps {
     text: string;
-    className: string;
-    range: 'sm';
+    className?: string;
+    range?: 'lg' | 'sm' | 'none';
 }
 
 const Gradient = ({ text, className, range }: GradientProps) => (

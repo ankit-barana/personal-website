@@ -1,12 +1,12 @@
-import ResumeButton from './ResumeButton';
+import ResumeButton from '../ResumeButton';
 import Typewriter from 'typewriter-effect';
 import { useRouter } from 'next/router';
-import Gradient from './Gradient';
-import TypedText from './TypedText';
+import Gradient from '../Gradient';
+import TypedText from '../TypedText';
 
 const Intro = () => {
     const router = useRouter();
-    const whyIcode = ['for fun.', 'for research.', 'for building softwares.'];
+    const whyIcode = ['for fun.', 'for research.', 'for building things.'];
 
     return (
         <section
@@ -21,7 +21,7 @@ const Intro = () => {
                     range="sm"
                 />
             </p>
-            <div className="mt-4 font-heading font-semibold text-[2.75rem] leading-none sm:text-6xl">
+            <div className="mt-4 font-heading font-semibold text-[2.75rem] leading-[1.1] sm:text-6xl">
                 I love to Code...
                 <TypedText textArray={whyIcode} />
             </div>

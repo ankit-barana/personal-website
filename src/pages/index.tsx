@@ -1,12 +1,12 @@
 import { NextPage } from 'next';
 import { getAllProjectsData } from '@/services/projectService';
 import { Project } from '@/types/project';
-import Intro from '@/components/Intro';
-import About from '@/components/About';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
-import Tools from '@/components/Tools';
-import Work from '@/components/Work';
+import Intro from '@/components/sections/Intro';
+import About from '@/components/sections/About';
+import Projects from '@/components/sections/Projects';
+import Contact from '@/components/sections/Contact';
+import Tools from '@/components/sections/Tools';
+import Work from '@/components/sections/Work';
 import Navbar from '@/components/Navbar';
 
 interface IndexProps {

@@ -7,15 +7,16 @@ interface TypedTextProps {
 }
 
 const TypedText = ({ textArray, className }: TypedTextProps) => (
-    <div className={clsx('mt-2 flex flex-col', className)}>
+    <div className={clsx('flex flex-col', className)}>
         <Typewriter
             options={{
                 strings: textArray,
                 autoStart: true,
                 cursor: '',
                 loop: true,
-                delay: 70,
-                deleteSpeed: 60,
+                delay: 40,
+                deleteSpeed: 40,
+                // @ts-ignore
                 pauseFor: 700,
             }}
         />

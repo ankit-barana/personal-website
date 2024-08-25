@@ -4,7 +4,6 @@ import Link from './Link';
 import { GithubIcon } from './icons';
 import { Thumbnail } from '@/types/project';
 import Image from 'next/image';
-import NextLink from 'next/link';
 
 const Project = ({ project }: { project: Thumbnail }) => {
     const links = (repoUrl: string, liveUrl: string, className?: string) => (

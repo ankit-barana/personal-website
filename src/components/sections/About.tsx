@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Gradient from '../Gradient';
 
 const About = () => {
     return (
@@ -18,11 +19,12 @@ const About = () => {
                         Hello! My name is Ankit, and I love solving problems
                         through code, whether it&apos;s developing research
                         tools, creating web applications, or just experimenting
-                        with various algorithms. Initially a neuroscience major
-                        at Oberlin College, I found a passion for coding while
-                        working in the Sensory Neuroscience Lab. It wasn&apos;t
-                        until I took the Data Structures class, however, that I
-                        declared a second major in computer science.
+                        with various algorithms. I am currently pursuiing
+                        Initially a neuroscience major at Oberlin College, I
+                        found a passion for coding while working in the Sensory
+                        Neuroscience Lab. It wasn&apos;t until I took the Data
+                        Structures class, however, that I declared a second
+                        major in computer science.
                     </p>
                     <br />
                     <p>

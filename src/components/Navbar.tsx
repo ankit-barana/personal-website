@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
 import { HomeIcon } from './icons';
 import Tab from './Tab';
 import Link from 'next/link';

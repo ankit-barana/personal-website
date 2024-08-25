@@ -1,5 +1,5 @@
 import { title } from 'process';
-import Badge from './Badge';
+import Badge from '../Badge';
 
 const Tools = () => {
     const tools = [
