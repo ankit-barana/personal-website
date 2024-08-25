@@ -37,10 +37,10 @@ const Navbar = ({ className }: { className?: string }) => {
                 className
             )}
         >
-            <ul className="p-1 mx-auto flex items-center w-fit max-w-7xl rounded-full bg-secondary-glass opacity-100 backdrop-blur-[10.5px]">
+            <ul className="p-1 mx-auto flex items-center w-fit max-w-7xl rounded-full bg-primary-900 opacity-100 backdrop-blur-[10.5px] dark:bg-dark-nav">
                 <Link href="#home" title="Home">
                     <Tab className="px-[17px]">
-                        <HomeIcon className="h-[18px] w-[18px] sm:h-5 sm:w-5" />
+                        <HomeIcon className="h-[18px] w-[18px] sm:h-5 sm:w-5 dark:fill-dark-white" />
                     </Tab>
                 </Link>
                 {navLinks.map((navLink) => (

@@ -1,5 +1,6 @@
 import { title } from 'process';
 import Badge from '../Badge';
+import Heading from '../Heading';
 
 const Tools = () => {
     const tools = [
@@ -65,21 +66,16 @@ const Tools = () => {
         },
     ];
     return (
-        <section className="py-36 md:py-40" id="tools">
-            <div className="flex w-full items-center">
-                <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
-                    Tools
-                </h3>
-                <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
-            </div>
+        <section className="py-44" id="tools">
+            <Heading text="Tools" width="max-w-md" />
             <div className="mt-12 flex flex-col gap-12">
                 {tools.map((tool) => (
                     <div key={tool.title}>
                         <div className="flex flex-col gap-1">
-                            <p className="text-lg font-semibold">
+                            <p className="text-lg font-semibold text-black dark:text-dark-white">
                                 {tool.title}
                             </p>
-                            <p className="text-sm font-medium text-gray-500">
+                            <p className="text-sm font-medium text-gray-500 dark:text-dark-gray">
                                 {tool.subtitle}
                             </p>
                         </div>

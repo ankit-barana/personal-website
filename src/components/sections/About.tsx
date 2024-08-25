@@ -1,30 +1,26 @@
 import Image from 'next/image';
 import Gradient from '../Gradient';
+import Heading from '../Heading';
 
 const About = () => {
     return (
         <section
-            className="flex w-full flex-col items-center gap-x-8 py-40 md:py-40 md:flex-row"
+            className="flex w-full flex-col items-center gap-x-8 py-44 md:flex-row"
             id="about"
         >
             <div className="w-full">
-                <div className="flex w-full items-center">
-                    <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
-                        About Me
-                    </h3>
-                    <div className="mx-8 h-0.5 w-full rounded bg-gray-300"></div>
-                </div>
-                <div className="mt-4 text-gray-600">
+                <Heading text="About Me" />
+                <div className="mt-4 text-gray-600 dark:text-dark-gray">
                     <p>
                         Hello! My name is Ankit, and I love solving problems
                         through code, whether it&apos;s developing research
                         tools, creating web applications, or just experimenting
-                        with various algorithms. I am currently pursuiing
-                        Initially a neuroscience major at Oberlin College, I
-                        found a passion for coding while working in the Sensory
-                        Neuroscience Lab. It wasn&apos;t until I took the Data
-                        Structures class, however, that I declared a second
-                        major in computer science.
+                        with various algorithms. I am currently pursuing a
+                        double major in neuroscience and computer science at
+                        Oberlin College. I found a passion for coding while
+                        working in the Sensory Neuroscience Lab. It wasn&apos;t
+                        until I took the Data Structures class, however, that I
+                        declared a major in computer science.
                     </p>
                     <br />
                     <p>

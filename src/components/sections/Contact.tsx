@@ -2,19 +2,15 @@ import { useRouter } from 'next/router';
 import { GithubIcon, LinkedInIcon } from './../icons';
 import Button from '../Button';
 import ResumeButton from '../ResumeButton';
+import Heading from '../Heading';
 
 const Contact = () => {
     const router = useRouter();
     return (
-        <section className="py-36 md:py-40" id="contact">
-            <div className="flex w-full items-center">
-                <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
-                    Contact
-                </h3>
-                <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
-            </div>
+        <section className="py-44" id="contact">
+            <Heading text="Contact" width="max-w-md" />
             <div className="mt-10">
-                <p className="max-w-lg text-gray-600 ">
+                <p className="max-w-lg text-gray-600 dark:text-dark-gray">
                     Wanna connect? Shoot me an email or text me on Linkedin
                     &#40;linked below&#41;. Looking forward to hearing from you!
                 </p>
@@ -40,7 +36,7 @@ const Contact = () => {
                                     title="Github profile"
                                 >
                                     {' '}
-                                    <GithubIcon className="h-8 w-8" />
+                                    <GithubIcon className="h-8 w-8 fill-black dark:fill-dark-white" />
                                 </a>
                             </li>
                             <li>

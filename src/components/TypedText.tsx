@@ -14,10 +14,10 @@ const TypedText = ({ textArray, className }: TypedTextProps) => (
                 autoStart: true,
                 cursor: '',
                 loop: true,
-                delay: 40,
-                deleteSpeed: 40,
+                delay: 70,
+                deleteSpeed: 70,
                 // @ts-ignore
-                pauseFor: 700,
+                pauseFor: 1200,
             }}
         />
     </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { EEGIcon, WorkshopIcon, CodeIcon, ExternalLinkIcon } from './../icons';
 import Gradient from '../Gradient';
+import Heading from '../Heading';
 
 const Work = () => {
     const works = [
@@ -59,41 +60,36 @@ const Work = () => {
         },
     ];
     return (
-        <section className="py-36 md:py-40" id="work">
-            <div className="flex w-full items-center">
-                <h3 className="whitespace-nowrap font-heading text-lg font-bold uppercase tracking-widest">
-                    Work
-                </h3>
-                <div className="mx-8 h-0.5 w-full max-w-md rounded bg-gray-200"></div>
-            </div>
+        <section className="py-44" id="work">
+            <Heading text="Work" width="max-w-md" />
             <div>
                 <div className="ml-5 mt-12 flex-col items-center gap-4 sm:gap-6">
-                    <div className="mb-1 h-0.5 w-2 bg-gray-200" />
-                    <div className="mb-1 h-1 w-2 bg-gray-200" />
-                    <div className="mb-1.5 h-2 w-2 bg-gray-200" />
+                    <div className="mb-1 h-0.5 w-2 bg-gray-200 dark:bg-dark-deepgray" />
+                    <div className="mb-1 h-1 w-2 bg-gray-200 dark:bg-dark-deepgray" />
+                    <div className="mb-1.5 h-2 w-2 bg-gray-200 dark:bg-dark-deepgray" />
                 </div>
                 {works
                     .sort((a, b) => Number(a.priority) - Number(b.priority))
                     .map((work) => (
                         <div
                             key={work.organization}
-                            className="flex items-center gap-4 text-gray-600 sm:gap-6"
+                            className="flex items-center gap-4 text-gray-600 sm:gap-6 dark:text-dark-gray"
                         >
                             <div className="flex h-full flex-col items-center">
-                                <div className="mb-2 h-36 w-2 bg-gray-200 sm:h-32 md:h-16" />
+                                <div className="mb-2 h-36 w-2 bg-gray-200 sm:h-32 md:h-16 dark:bg-dark-deepgray" />
                                 {work.logo}
-                                <div className="mt-2 h-36 w-2 bg-gray-200 sm:h-32 md:h-20" />
+                                <div className="mt-2 h-36 w-2 bg-gray-200 sm:h-32 md:h-20 dark:bg-dark-deepgray" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-semibold text-black">
+                                <h3 className="text-xl font-semibold text-black dark:text-dark-white">
                                     {work.organization}
                                 </h3>
-                                <div className="mt-1 flex flex-col text-sm font-semibold text-gray-500 sm:flex-row sm:items-center">
+                                <div className="mt-1 flex flex-col text-sm font-semibold text-gray-500 sm:flex-row sm:items-center dark:text-dark-gray">
                                     <p>{work.title}</p>
                                     <div className="h-[7px] w-[7px] rounded-full bg-gray-500 mx-3 hidden sm:inline"></div>
                                     <p>{work.duration}</p>
                                 </div>
-                                <div className="mt-2 mb-5">{work.intro}</div>
+                                <div className="mt-2 mb-5 tx">{work.intro}</div>
                             </div>
                         </div>
                     ))}

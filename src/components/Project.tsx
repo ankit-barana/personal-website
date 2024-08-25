@@ -49,10 +49,12 @@ const Project = ({ project }: { project: Thumbnail }) => {
                         </li>
                     ))}
                 </ul>
-                <h4 className="mt-3 font-heading text-4xl font-semibold md:text-5xl">
+                <h4 className="mt-3 font-heading text-4xl text-black font-semibold md:text-5xl dark:text-dark-white">
                     {title}
                 </h4>
-                <p className="mt-4 text-gray-600">{intro}</p>
+                <p className="mt-4 text-gray-600 dark:text-dark-gray">
+                    {intro}
+                </p>
                 <div className="mt-5 hidden md:flex items-center gap-5">
                     {links(repoUrl, liveUrl, 'h-7 w-7')}
                     <div className="flex h-full items-end ">
