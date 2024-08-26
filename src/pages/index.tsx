@@ -6,7 +6,7 @@ import About from '@/components/sections/About';
 import Projects from '@/components/sections/Projects';
 import Contact from '@/components/sections/Contact';
 import Tools from '@/components/sections/Tools';
-import Work from '@/components/sections/Work';
+import Works from '@/components/sections/Works';
 import Navbar from '@/components/Navbar';
 
 interface IndexProps {
@@ -21,7 +21,7 @@ const Index: NextPage<IndexProps> = ({ projects }) => {
                 <Intro />
                 <About />
                 <Projects projects={projects} />
-                <Work />
+                <Works />
                 <Tools />
                 <Contact />
             </div>

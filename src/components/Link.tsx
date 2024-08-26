@@ -1,6 +1,7 @@
 import { AnchorHTMLAttributes, ReactNode } from 'react';
 import NextLink from 'next/link';
 import clsx from 'clsx';
+import { ExternalLinkIcon } from './icons';
 
 interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
@@ -15,15 +16,15 @@ const Link = ({ href, children, className, ...props }: LinkProps) => {
     );
 
     return (
-        <div className={styles}>
-            <NextLink href={href} {...props}>
-                <div className="flex flex-row gap-1.5 justify-center">
+        <div className="group flex flex-row gap-0.5 justify-center items-center">
+            <div className={styles}>
+                <NextLink href={href} {...props}>
                     <p>{children}</p>
-                    <p className="transition-all ease-in-out duration-300 group-hover:ml-1.5">
-                        -&gt;
-                    </p>
-                </div>
-            </NextLink>
+                </NextLink>
+            </div>
+            <p className="-rotate-45 text-primary-100 transform duration-200 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1 dutext-lg font-bold text-xl">
+                -&gt;
+            </p>
         </div>
     );
 };

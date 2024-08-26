@@ -6,7 +6,7 @@ import { Thumbnail } from '@/types/project';
 import Image from 'next/image';
 
 const Project = ({ project }: { project: Thumbnail }) => {
-    const links = (repoUrl: string, liveUrl: string, className?: string) => (
+    const repoLink = (repoUrl: string, liveUrl: string, className?: string) => (
         <div className={className}>
             <a
                 href={project.repoUrl}
@@ -56,7 +56,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                     {intro}
                 </p>
                 <div className="mt-5 hidden md:flex items-center gap-5">
-                    {links(repoUrl, liveUrl, 'h-7 w-7')}
+                    {repoLink(repoUrl, liveUrl, 'h-7 w-7')}
                     <div className="flex h-full items-end ">
                         <Link href={project.liveUrl}>Live Demo</Link>
                     </div>
@@ -66,7 +66,7 @@ const Project = ({ project }: { project: Thumbnail }) => {
                 <div className="flex h-full items-end">
                     <Link href={project.liveUrl}>Live Demo</Link>
                 </div>
-                {links(repoUrl, liveUrl, 'h-7 w-7')}
+                {repoLink(repoUrl, liveUrl, 'h-7 w-7')}
             </div>
         </li>
     );

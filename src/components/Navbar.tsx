@@ -33,7 +33,7 @@ const Navbar = ({ className }: { className?: string }) => {
     return (
         <nav
             className={clsx(
-                'mt-8 z-50 flex justify-center fixed m-auto left-0 right-0 bottom-4 md:bottom-auto',
+                'mt-8 z-50 flex justify-center fixed m-auto left-0 right-0 bottom-6 md:bottom-auto',
                 className
             )}
         >
