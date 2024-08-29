@@ -54,6 +54,7 @@ const Tools = () => {
                 'Technologies for designing experiments, building stimuli, analysing data, and communicating findings.',
             items: [
                 'MS Office',
+                'Latex',
                 'Adobe-Suite',
                 'Canva',
                 'SPSS',

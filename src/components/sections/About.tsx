@@ -18,7 +18,8 @@ const About = () => {
                         Hi there! My name is Ankit, and I love solving problems
                         through code, whether it&apos;s developing research
                         tools, creating web applications, or just experimenting
-                        with various algorithms. I am currently pursuing a{' '}
+                        with various algorithms. I am currently pursuing a
+                        double major in{' '}
                         <GradientHover text="computer science" /> and{' '}
                         <GradientHover text="neuroscience" /> at{' '}
                         <GradientHover text="Oberlin College" />.
@@ -39,7 +40,7 @@ const About = () => {
                         for my winter-term project, where I contributed to
                         developing several experiments in{' '}
                         <GradientHover text="React" />. Lately, I have been
-                        working on some personal projects which you can check{' '}
+                        working on some projects which you can take a look at{' '}
                         <p
                             className="inline-flex"
                             onClick={() => router.push('#projects')}

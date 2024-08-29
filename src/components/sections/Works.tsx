@@ -58,7 +58,7 @@ const Works = () => {
             priority: 3,
             length: 'sm',
             description:
-                'I collaborated with the village council to design and organize smartphone workshops in my village and neighbouring communities to promote digital literacy with a focus on UPI payments and relevant e-commerce strategies.',
+                'I collaborated with the local Village Council to design and organize smartphone workshops in my village and neighbouring communities to promote digital literacy with a focus on UPI payments and relevant e-commerce strategies.',
             logo: (
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-800 to-primary-200 hover:bg-primary-800 transition-transform hover:rotate-[20deg] hover:duration-200">
                     <WorkshopIcon className="h-8 w-8" />

@@ -13,7 +13,7 @@ const Intro = () => {
             className="flex flex-col justify-center py-44 md:pb-72 md:pt-80 lg:py-44 min-h-[600px] md:min-h-[750px]"
             id="home"
         >
-            <p className="mt-20 tracking-wide font-semibold text-base text-gray-600 md:mt-5 dark:text-dark-gray">
+            <p className="mt-8 tracking-wide font-semibold text-base text-gray-600 md:-mt-10 dark:text-dark-gray">
                 Hi, I am{' '}
                 <Gradient
                     className="font-bold"

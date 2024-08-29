@@ -27,18 +27,21 @@ const config: Config = {
         },
         dark: {
           black: '#242525',
-          white: '#e5e0d8',
-          gray: '#b1a99d',
+          white: '#E5E0D8',
+          gray: '#B1A99D',
           deepgray: '#303333',
-          navy: '#2c356f',
-          blue: '#5fbbe9',
+          navy: '#2C356F',
+          blue: '#5FBBE9',
           nav: '#464646b3',
-          lightnavy: '#5e68ab',
+          lightnavy: '#5E68AB',
+          night: '#0D0D38',
+          day: '#E89845'
         },
       },
     },
   },
   plugins: [require('@tailwindcss/typography')],
+  darkMode: 'class'
 };
 
 export default config;
