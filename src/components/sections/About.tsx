@@ -16,11 +16,10 @@ const About = () => {
                 <div className="mt-4 text-gray-600 dark:text-dark-gray">
                     <p>
                         Hi there! My name is Ankit, and I love solving problems
-                        through code, whether it&apos;s developing research
-                        tools, creating web applications, or just experimenting
-                        with various algorithms. I am currently pursuing a
-                        double major in{' '}
-                        <GradientHover text="computer science" /> and{' '}
+                        with code, whether it&apos;s developing research tools,
+                        creating web applications, or just experimenting with
+                        various algorithms. I am currently pursuing a double
+                        major in <GradientHover text="computer science" /> and{' '}
                         <GradientHover text="neuroscience" /> at{' '}
                         <GradientHover text="Oberlin College" />.
                     </p>
@@ -28,11 +27,10 @@ const About = () => {
                     <div>
                         For over 2 years, I have been conducting research on{' '}
                         <GradientHover text="Mutlisensory Integration and Attention" />{' '}
-                        in the Leslie Kwakye Lab where daily sessions of{' '}
-                        <GradientHover text="coding" /> and{' '}
+                        in the Leslie Kwakye Lab where I am extensively involved
+                        in <GradientHover text="coding" /> and{' '}
                         <GradientHover text="debugging" /> neuroscience
-                        experiments became part of my life. I also joined Powers
-                        Lab at{' '}
+                        experiments. I also joined Powers Lab at{' '}
                         <GradientHover
                             text="Yale
                         School of Medicine"
