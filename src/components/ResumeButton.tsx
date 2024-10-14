@@ -10,7 +10,9 @@ const ResumeButton = ({ className, size }: ResumeButtonProps) => {
     return (
         <div className={className}>
             <Link href="/documents/resume.pdf" target="_blank">
-                <Button className={className}>Resumé</Button>
+                <Button className={className}>
+                    <p className="mx-4">CV</p>
+                </Button>
             </Link>
         </div>
     );

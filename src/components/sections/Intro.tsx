@@ -1,5 +1,4 @@
 import ResumeButton from '../ResumeButton';
-import Typewriter from 'typewriter-effect';
 import { useRouter } from 'next/router';
 import Gradient from '../Gradient';
 import TypedText from '../TypedText';
@@ -9,10 +8,7 @@ const Intro = () => {
     const whyIcode = ['for fun.', 'for research.', 'for building things.'];
 
     return (
-        <section
-            className="flex flex-col justify-center py-44 md:pb-72 md:pt-80 lg:py-44 min-h-[600px] md:min-h-[750px]"
-            id="home"
-        >
+        <section className="flex flex-col justify-center py-44 md:pb-72 md:pt-80 lg:py-44 min-h-[600px] md:min-h-[750px]">
             <p className="mt-8 tracking-wide font-semibold text-base text-gray-600 md:-mt-10 dark:text-dark-gray">
                 Hi, I am{' '}
                 <Gradient
