@@ -11,7 +11,7 @@ const ResumeButton = ({ className, size }: ResumeButtonProps) => {
         <div className={className}>
             <Link href="/documents/cv.pdf" target="_blank">
                 <Button className={className}>
-                    <p className="mx-4">CV</p>
+                    <p className="mx-[17px]">CV</p>
                 </Button>
             </Link>
         </div>
